@@ -8,17 +8,20 @@ function calcularTotal() {
     const v2 = parseFloat(input02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Insira o valor 01 e o valor 02 para prosseguir com o cálculo.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `<p>INSIRA O <span>VALOR 01</span> E O <span>VALOR 02</span> PARA PROSSEGUIR.</p>`
     } else {
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `
-        <h2>Cálculo</h2>
-            <ul>
-                <li>Você comprou ${v2} unidades com um custo de R$${v1} cada.</li>
-                <li>TOTAL A PAGAR:</li>       
-                <li>R$ ${v1 * v2}</li>
-            </ul>
+        <div>
+            <h2>TOTAL</h2>
+            <p>Você comprou ${v2} unidades com um custo de R$${v1} cada.</p>
+        </div>
+        <ul>
+            <li><span>TOTAL A PAGAR:<span></li>       
+            <li><span>R$ ${v1 * v2}<span></li>
+        </ul>
         `;   
     }
 }
@@ -28,19 +31,22 @@ function desconto() {
     const v2 = parseFloat(input02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Insira o valor 01 e o valor 02 para prosseguir com o cálculo.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `<p>INSIRA O <span>VALOR 01</span> E O <span>VALOR 02</span> PARA PROSSEGUIR.</p>`
     } else {
         const desconto = (v1 * v2) / 100
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `
-        <h2>Cálculo</h2>
+        <div>
+            <h2>DESCONTOS</h2>
+            <p>Desconto de ${v2}% sobre R$${v1}.</p>
+        </div>
             <ul>
-                <li>Desconto de ${v2}% sobre R$${v1}.</li>
                 <li>VALOR DO DESCONTO:</li>       
                 <li>R$ ${desconto}</li>
-                <li>VALOR TOTAL A PAGAR:</li>
-                <li>R$ ${v1 - desconto}</li>
+                <li><span>VALOR TOTAL A PAGAR:</span></li>
+                <li><span>R$ ${v1 - desconto}</span></li>
             </ul>
         `;   
     }
@@ -51,20 +57,23 @@ function juros() {
     const v2 = parseFloat(input02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Insira o valor 01 e o valor 02 para prosseguir com o cálculo.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `<p>INSIRA O <span>VALOR 01</span> E O <span>VALOR 02</span> PARA PROSSEGUIR.</p>`
     } else {
         const acrescimo = (v1 * v2) / 100
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `
-        <h2>Cálculo</h2>
-            <ul>
-                <li>Juros de ${v2}% sobre R$${v1}.</li>
-                <li>VALOR DO ACRÉSCIMO:</li>       
-                <li>R$ ${acrescimo}</li>
-                <li>VALOR TOTAL A PAGAR:</li>
-                <li>R$ ${v1 + acrescimo}</li>
-            </ul>
+        <div>
+            <h2>JUROS</h2>
+            <p>Juros de ${v2}% sobre R$${v1}.</p>
+        </div>
+        <ul>
+            <li>VALOR DO ACRÉSCIMO:</li>       
+            <li>R$ ${acrescimo}</li>
+            <li><span>VALOR TOTAL A PAGAR:</span></li>
+            <li><span>R$ ${v1 + acrescimo}</span></li>
+        </ul>
         `;   
     }
 }
@@ -74,16 +83,17 @@ function comissao() {
     const v2 = parseFloat(input02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Insira o valor 01 e o valor 02 para prosseguir.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `<p>INSIRA O <span>VALOR 01</span> E O <span>VALOR 02</span> PARA PROSSEGUIR.</p>`
     } else {
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `
-        <h2>Cálculo</h2>
-            <ul>
-                <li>COMISSÃO:</li>       
-                <li>R$ ${v1 * (v2 / 100)}</li>
-            </ul>
+        <h2>COMISSÕES</h2>
+        <ul>
+            <li><span>COMISSÃO:</span></li>       
+            <li><span>$ ${v1 * (v2 / 100)}</span></li>
+        </ul>
         `;   
     }
 }
@@ -93,17 +103,20 @@ function lucro() {
     const v2 = parseFloat(input02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Insira o valor 01 e o valor 02 para prosseguir com o cálculo.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `<p>INSIRA O <span>VALOR 01</span> E O <span>VALOR 02</span> PARA PROSSEGUIR.</p>`
     } else {
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `
-        <h2>Cálculo</h2>
-            <ul>
-                <li>Custo R$${v1} | Preço de venda: R$${v2}.</li>
-                <li>LUCRO:</li>       
-                <li>R$ ${v1 - v2}</li>
-            </ul>
+        <div>
+            <h2>LUCRO</h2>
+            <p>Custo R$${v1} | Preço de venda: R$${v2}.</p>
+        </div>
+        <ul>
+            <li><span>LUCRO:</span></li>       
+            <li><span>R$ ${v1 - v2}</span></li>
+        </ul>
         `;   
     }
 }
