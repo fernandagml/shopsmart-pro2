@@ -47,7 +47,8 @@ Plaintext
 
 └── js/
 
-	└── app.js      	\# Lógica e manipulação do DOM  
+|	└── app.js      	\# Lógica e manipulação do DOM  
+
 ---
 
 **✒️ Autor**
