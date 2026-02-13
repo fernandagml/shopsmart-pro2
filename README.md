@@ -4,7 +4,7 @@ O **ShopSmart Pro** é um sistema de cálculos comerciais desenvolvido como ativ
 
 ---
 
-**🚀 Tecnologias Utilizadas**
+## **🚀 Tecnologias Utilizadas**
 
 * **HTML5:** Estrutura semântica e acessível.  
 * **CSS3:** Estilização moderna com foco em UI/UX, utilizando variáveis e layouts flexíveis.  
@@ -13,7 +13,7 @@ O **ShopSmart Pro** é um sistema de cálculos comerciais desenvolvido como ativ
 
 ---
 
-**🛠️ Funcionalidades e Regras de Negócio**
+## **🛠️ Funcionalidades e Regras de Negócio**
 
 O sistema processa dois valores de entrada para realizar as seguintes operações:
 
@@ -25,7 +25,7 @@ O sistema processa dois valores de entrada para realizar as seguintes operaçõe
 
 ---
 
-**🧠 Lógica de Programação**
+## **🧠 Lógica de Programação**
 
 A prioridade deste projeto foi a construção de um JavaScript funcional e bem estruturado. Pontos de destaque:
 
@@ -35,6 +35,6 @@ A prioridade deste projeto foi a construção de um JavaScript funcional e bem e
 
 ---
 
-**✒️ Autor**
+## **✒️ Autor**
 
 Desenvolvido por **Fernanda Gaspar**.
