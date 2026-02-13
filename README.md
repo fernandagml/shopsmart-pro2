@@ -35,22 +35,6 @@ A prioridade deste projeto foi a construção de um JavaScript funcional e bem e
 
 ---
 
-**📁 Estrutura do Projeto**
-
-Plaintext
-
-├── index.html      	\# Estrutura principal
-
-├── css/
-
-│   └── app-style.css   \# Estilização e design
-
-└── js/
-
-|	└── app.js      	\# Lógica e manipulação do DOM  
-
----
-
 **✒️ Autor**
 
 Desenvolvido por **Fernanda Gaspar**.
