@@ -1,4 +1,4 @@
-**🛒 ShopSmart Pro**
+# **🛒 ShopSmart Pro**
 
 O **ShopSmart Pro** é um sistema de cálculos comerciais desenvolvido como atividade avaliativa para o curso técnico de **Desenvolvimento de Sistemas**. O foco principal deste projeto é demonstrar o domínio na manipulação do **DOM (Document Object Model)**, validação de dados de entrada e a integração entre a lógica de programação e a interface visual.
 
