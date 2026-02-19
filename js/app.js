@@ -20,7 +20,7 @@ function calcularTotal() {
         </div>
         <ul>
             <li><span>TOTAL A PAGAR:<span></li>       
-            <li><span>R$ ${v1 * v2}<span></li>
+            <li><span>R$ ${(v1 * v2).toFixed(2)}<span></li>
         </ul>
         `;   
     }
@@ -44,9 +44,9 @@ function desconto() {
         </div>
             <ul>
                 <li>VALOR DO DESCONTO:</li>       
-                <li>R$ ${desconto}</li>
+                <li>R$ ${desconto.toFixed(2)}</li>
                 <li><span>VALOR TOTAL A PAGAR:</span></li>
-                <li><span>R$ ${v1 - desconto}</span></li>
+                <li><span>R$ ${(v1 - desconto).toFixed(2)}</span></li>
             </ul>
         `;   
     }
@@ -70,9 +70,9 @@ function juros() {
         </div>
         <ul>
             <li>VALOR DO ACRÉSCIMO:</li>       
-            <li>R$ ${acrescimo}</li>
+            <li>R$ ${acrescimo.toFixed(2)}</li>
             <li><span>VALOR TOTAL A PAGAR:</span></li>
-            <li><span>R$ ${v1 + acrescimo}</span></li>
+            <li><span>R$ ${(v1 + acrescimo).toFixed(2)}</span></li>
         </ul>
         `;   
     }
@@ -92,7 +92,7 @@ function comissao() {
         <h2>COMISSÕES</h2>
         <ul>
             <li><span>COMISSÃO:</span></li>       
-            <li><span>$ ${v1 * (v2 / 100)}</span></li>
+            <li><span>$ ${(v1 * (v2 / 100)).toFixed(2)}</span></li>
         </ul>
         `;   
     }
@@ -115,7 +115,7 @@ function lucro() {
         </div>
         <ul>
             <li><span>LUCRO:</span></li>       
-            <li><span>R$ ${v1 - v2}</span></li>
+            <li><span>R$ ${(v1 - v2).toFixed(2)}</span></li>
         </ul>
         `;   
     }
